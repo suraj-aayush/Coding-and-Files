@@ -16,14 +16,7 @@ void solve(int ind, int n, int k, int sum, vector<int>&arr, vector<int>&ans)
         }
         return;
     }
-    // if(sum==k)
-    // {
-    //         for(auto & it: ans)
-    //         cout<<it<<" ";
-
-    //         cout<<endl;
-    // }
-
+    
     sum += arr[ind];
     ans.push_back(arr[ind]);
     solve(ind+1, n, k, sum, arr, ans);
